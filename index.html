@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAACiCAMAAAAUR/N4AAAAaVBMVEX///8AAAD8/Py+vr7z8/Pp6enMzMzs7Ow2Njbf39+1tbXc3Nzm5ubV1dXPz8/4+PgxMTFfX18NDQ3ExMSRkZGsrKwdHR1OTk6lpaVGRkZubm47Ozuamppzc3NYWFgYGBgnJyeEhIR7e3tWER6ZAAAKIklEQVR4nO1a2ZaqSgyVAkFQkFkEVPD/P/KSpEaw7bb7vNy1sh/6KLGGTDup4ux2DAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYa0RpmAa/GHcKq9fj9mGVRa8E5zg9iRfPg7Sq0pcj/gDR9Yc2f6afjjsn99LLb+luvVPhF6039f5Wg3S+HO7zcf37XfY8eN7h1Yi/oPAQw3q975A8cFy+GVe1KJiqteCYo+AQr55n9Nxrkw+38BazJ3H9JBrFbq/G3VeisxKUawcowcUVRAcl8P5hNErzAsaPBhZ63MoBNy3w7cfCmNBzw77Xz73b75R4hSd5C/9+EuLksBL+uAEUGcHTEQSl3n9tPw8hEPN5RPGv9VjjeIHp5uNtY+FvMMKAbtx6usOdJ/C3dwQN6jpuNK4huzqZE+v0+zV8YIBivzttN/IeEImziLaKQWAVEeZTsRFc4t064k4w020JlvRT274F2ncx13lY/j38fNz+irsI5HBLACHQ7Hbl2lCRFKwVqzxJh2jb5i/KWDiD/4cllwXk2vRzxq8mNH+0ybFqyZgp3AmM8BeC3VoAEXoFNozyjwnsa0QYOMDz4Lo2/PFA+Pkz2B03HAeCe0yc370QiJUATYsxG13/oWKnu4oYH6jsXYFMx7qLdZdRE7fBKLf4gOAWUFxVLwT7lSC6K5aMhrUt/oD4qjgqA8XeRLgPv7xq58y0nXpdJcRMkQaZ451+INhPKpj37aZ0/B7xoOyFin1tLyoLXiu/Bj1ZFxhtsH8X3CyNzy8E40qArs30p00b9kscD0qdbxTDImTyCTh6SrZMQOS9JArYwemcvhKkOpjTf1nHULFGK/Z1KCrFJL3ES2ZMPiWMU3pAAK4s10QALgfDQeTVlmIhTIFdqr8O6z8pNtiKPb6OcF/2Q3v6mi4Zl1e7ZGNkECz7P5bGCEbwaHbHxyreQh2akIT/rKUC8iDFwvd0H1DPq3qhbDHIIcR+9+KQYnbA/QO3P1yNjaC0y6WvFYN0v/wTrXZSMcwsMP70JsKjgioXARrXIdvdV3FFgqWPAG7pHY3DSQsKW5AoP2GBc7rjv+CkqogAtspxj8f6lpxf/DY4GhVQsRT7cpfHYP+P5AS1wU3YcInB1g8umIKWLaTHBGn48TH+K2DnAZ0btlRI3EFru0ZD6D9KsUMKxri4bRgpBofryY1rVCzxl8kfjikqFYr3dYH4EwLQBzqP81V+kAet+f1ZFhXzYfDs8hgq1tSbSJSKgaDYO88lK2Kh7rViQdiNY5f88kQtBBZS6BVNm47tn1cWtY83UMJs3DInKvbMkQ+2it3ua7Inxaa52OSRqmNYuDUr+/2BdvHpMWbZbVMMw3CHLUCjhOocjWLAkdNwXZhBd4fDkHfqCyhWAnNf9u7EmHaPhezz0A3fcAnCcio3dzxyYWwZ1elC1Oaw/WGPdR49A+D7WheRyHOgiBJKuVeqJi9T9y/YdkT1fU7PrgDDOizUc30TRZ18PHdyKmykfHJYLX9b2BvIPtEL+wODJWpgWbpuClzF1OHTn2zF0kHaBPWe4ePtZAuwHzmD4W+xMwJdIOBLgwS1h5WbE7Cl8qU0ej7hP/UHzcjp4m6+j9BNlC74sZyUrJW64FF70opdLfML+oz8KJtlIliK6iva/ChHtLDPirwNs2F9nFGXGzksxvvKvKn8Gxgm//GtoBDk6nwea/Jce8SJybS4mykMG7pGe0jWxlg9qIxSLsekUBeJfSCo15V+IcaDumCN6PRkiyaRPGjmueUw9P8A1ggwfH9+3ZnQCsFZiKDCnBjxsBUZaQ4GQOO3qbXcVSm2L6TDhPEYlteMXJ2j8WP5HFqNVCYfblNl+LhwU6dGyxsSCidQUlBts09176E2sbPXWDQVRoNef1KhSIqpuiIjjhJbqCvSOkjkJ1kE1GVsIpReDZoiVWtmsvVY8FBmh0icKSrvH3kMA7xWNJwqtlLN+KA3hnepk5z36XisIj6OrRlBrHNXlh912LnPSlC5Gt+qWuZeGcodjcYwZ9hb+2PFoIt6mJIuJ9YNgafdj47I6en5aXtMSD9LxQLrktoxUnT5QpCsn+szroD8y0n/Bu/wVF8gdpv3Oi7wmsN0EcqYslOgvNAW0IrdbI/t745ihssVVKBX+Uogq1JwWz3XpI5NHt2tYIduzrFV/75FDgbP6bxlp5FLW2Iu04UmLi7rGHbLmhVVjuhjjv9QO7xO1v6l0bceU+yjoS8ljGLIl941NoJWvPMZ3nKZFkzsyKjq1lZzkkwr+ZKICpdikqfcjunsT+iz9jCSnxM9u6SZ8n7qzczLczESf5bTAXTXnTEq1i77C1Av4wJIZPfO/L1ikpZUjMfAXg9aZbYUk0lBiumuy2r7YD+P6ixdbnXASCB9It8idStB3ZywTdQ+xhxb1NlTsOozAv7q8K7bx3ams1yKr3fUPQ6ygiTb0Sh2rm0X1Uox64JqIq8vJRqms474sKEBlsNrk94sjMEopE3M8YeaEJ9C9aDaYlpzeMseEFSFxaHUHFJaYYOj/IleolvDVPIzSiLY4QGyStUeQVnX6PnN7XCEZQkOP2fMQ70wHmixkIcPCgbaNdaxVq6Xqvl9Ny5fYjYxhaDSTwyLuhRSmOFz/Og082jhDk2gDxW92Ubj+LJWISvoNzoWO+MnzM9CKmY1sqWmwQoT8vKe8JHQr/qrepcM6qSTvTa6EloqYV4Sw46Q6PZYlUvpmQbM3Etv2LbGY8xwMgsrl+HluswsIlm1rGKmh84vQdz6banGKWv5q6OuNEWIRxPvrggKC79XHCujl9edGny61B0yIrCx8NHmipHQF3kGxs2QGEZ54kQn09GUOFJtHQVlB1vaN2pDN7mPICMemcJvCjSFmNdXcbDPunUFtcJL1PZjGSHUqMArNSLKYfSTGjNC36rh+yBvqhN/xNmvqiqkaPhLk2UNKtwqU8Rkur5JOlPfHsWY+H7SSQ9OP7gloIaovfcFTXio9fHLedsYWnoVseU3LA6qe5Al2LqV8ltbYi7OlaUG2aiY/idZ1XGtnP4/DWX1gwMn1XSzzcQQuDdZVzZWD3iPTUuuSDt2OkHrcsJ1tXUEdpvKi8kZYV9VLPOvWzRzEvzOZ5aLDsBZKgLc/8WSqQUwzNQBQ3YpQjZz0qDO/OY2xn2DY2vm/seXxuxo4avAjiGvzJvvGmCNuL9i9Wgv8m50hvcu13pFPFk/4WP6Vt3hnvoymkXqC2xgujxPzsJi+WlOgvVr7fqKOk93tyYtlbAYSEBUE4zFZWjLsj1c+pcX06+xjD0mY113yUl9z7qx2b5cP1dd1+heN/A7NUKOipYnnb9fG3TpBcNmEZxWguVL3Czrjn6w9UHYgSDSglOYNE0SnnY/dheDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYDMb/Fv8BtH2BEJNyRP0AAAAASUVORK5CYII=" alt="">
+   <div id="nav-part1">
+    <h4>Find talant</h4>
+    <h4>For designers</h4>
+    <h4>Inspiration</h4>
+    <h4> Learn design</h4>
+    <h4>Go pro</h4>
+   </div>
+   <div id="nav-part2">
+    <button id="x">Log in</button>
+    <button id="y">Sing Up</button>
+   </div>
+   </div>
+   <div id="center">
+     <video autoplay loop muted src="https://cdn.dribbble.com/uploads/39421/original/963b4f8739cbdf86ca3f3a23245efd18.mp4?1657824985"></video>
+       <div id="overlay">
+        <div id="elem1">
+          <h5>Discover</h5>
+          <h5>Animations</h5>
+          <h5>Branding</h5>
+          <h5>Illustrations</h5>
+          <h5>Mobile</h5>
+          <h5>Print</h5>
+          <h5>Product Design</h5>
+          <h5>Typography</h5>
+          <h5>Web Design</h5>
+       </div>   
+       <h2>Explore the world’s leading <br> design portfolios</h2>
+       <p>Millions of designers and agencies around the world showcase their portfolio work on <br> Dribbble - the home to the world’s best design and creative professionals.</p>
+       <input type="text" placeholder="Search...">
+       <h6>Trending searches</h6>
+       <div id="btn">
+       <button>landing page</button>
+       <button>ios</button>
+       <button>food</button>
+       <button>landing page</button>
+       <button>ux desing</button>
+       <button>app desing</button>
+      </div>
+     </div>
+   </div>
+ <div id="page2">
+  <div class="box">
+    <img src="https://cdn.dribbble.com/userupload/8821409/file/still-be63ffa0271a2a5e72fcee16ad90c815.png?resize=450x338&vertical=center" alt="">
+    <div class="boxtext">
+      <h4>LEARNme-Webside for i...</h4>
+      <i class="ri-save-line"></i>
+      <i class="ri-heart-3-line"></i>
+</div> </div>
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8820397/file/original-b1655a28a5fe557a459ca3aa2dcdd4ff.jpg?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>Loom-Logo Redesing</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8817243/file/original-c942772ac7a070f73b19a39e90f6468b.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>Campaigns Dashbord </h4>
+  <i class="ri-save-fill"></i>
+  <i class="ri-heart-3-fill"></i>
+</div> </div>
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8809463/file/original-97eabb57cd080aca1f64e4247582c6e2.png?crop=0x0-1600x1200&resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>Responsive Logo Draft S...</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8818211/file/still-8c1ef49d99ec5ba128a7a5e5eeeee030.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>Tebix Logo concept pt.2</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8800114/file/original-22d40cb70561907dab50216bc492525b.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>Oblack logo @ behance</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8825122/file/original-08163636c5da6cfd7abe8efac7cce7be.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>S House-logo concept... </h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8797391/file/still-42ef4a514bcedb4413f96dee84f2da0d.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>Halcyon Logistics Brandi...</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8819376/file/original-d8b5f28e3b78b302bcfcd87ff8a02149.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>i-TechPay Ultimate logo...</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8817785/file/original-e7973ab207afff98fb4252b262b66915.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>Earncash-Ultimate logo...</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8815707/file/original-5cf02d1b18d1d09e50607b99d34553b3.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>Dolganiuc Desing Online...</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8104023/file/original-a2e8c46dc985b0dde71940d3f4336ab4.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>Cypress Branding,Visual...</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8826901/file/original-4008fb79012368e5c103bcb4eec62e43.png?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>ESPN--Bracketology[2...</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8824824/file/original-8abffce1f9f82595964207c1ba54b777.jpg?resize=450x338&vertical=center" alt="">
+<div class="boxtext">
+  <h4>3D Deshborad</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+
+
+
+<div class="box">
+<img src="https://cdn.dribbble.com/userupload/8826387/file/original-0db7b8f73bd0420d61b83707eba2873c.gif" alt="">
+<div class="boxtext">
+  <h4>Environment Protection-r..</h4>
+  <i class="ri-save-line"></i>
+  <i class="ri-heart-3-line"></i>
+</div> </div>
+</div>
+<div id="b">
+<button>Sign up to coutinue</button></div>
+<div id="e"><H3>or sign in</H3></div></div>
+
+
+</body>
+</html>
+
+
